@@ -1,7 +1,14 @@
 import React from "react";
-import { View, Text, SafeAreaView, TextInput } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import { RectButton } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
 import styles from "./styles";
 import { colors } from "../../../constants/colors";
@@ -15,6 +22,13 @@ export default function YourInformation() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <TouchableOpacity
+        style={styles.btnGoBack}
+        activeOpacity={0.7}
+        onPress={() => navigation.goBack()}
+      >
+        <Ionicons name="ios-arrow-back" size={24} color={colors.dark} />
+      </TouchableOpacity>
       <Text style={styles.title}>Fill your information</Text>
       <Text style={styles.subTitle}>Enter your details</Text>
       <Text style={styles.inputLabel}>Enter your email</Text>

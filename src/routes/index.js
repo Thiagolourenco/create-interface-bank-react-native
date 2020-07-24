@@ -17,7 +17,7 @@ const Stack = createStackNavigator();
 
 export default function Routes() {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{ mode: "card"}}>
       <Stack.Screen
         name="Login"
         component={Login}

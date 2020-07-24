@@ -25,7 +25,7 @@ export default function Login() {
         <Text style={styles.buttonAccountText}>Create account</Text>
       </RectButton>
       <RectButton style={styles.buttonLogin}>
-        <Text style={styles.buttonLoginText}>Create account</Text>
+        <Text style={styles.buttonLoginText}>Login to Account</Text>
       </RectButton>
     </View>
   );

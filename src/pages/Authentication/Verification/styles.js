@@ -10,18 +10,19 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
   title: {
-    fontSize: 19,
+    fontSize: 28,
     color: colors.dark,
     fontWeight: "bold",
     marginLeft: 17,
-    marginTop: 10,
+    marginTop: 20,
+    marginBottom: 10,
   },
   subTitle: {
     color: colors.dark,
     fontSize: 14,
     // marginRight: 10,
     marginLeft: 17,
-    marginTop: 12,
+    // marginTop: 12,
     // textAlign: 'center',
   },
   inputLabel: {
@@ -60,12 +61,14 @@ const styles = StyleSheet.create({
     shadowColor: colors.dark,
     shadowOpacity: 0.4,
     shadowRadius: 3,
+    fontWeight: "bold",
   },
   textPhone: {
     fontSize: 12,
     color: colors.dark,
     marginTop: 20,
     marginLeft: 17,
+    fontWeight: "bold",
   },
   viewGroupButton: {
     bottom: 0,
@@ -89,6 +92,7 @@ const styles = StyleSheet.create({
   buttonStartText: {
     fontSize: 15,
     color: colors.gray,
+    fontWeight: "bold",
   },
   textBottom: {
     fontSize: 12,
@@ -103,6 +107,11 @@ const styles = StyleSheet.create({
     // borderBottomColor: colors.blue,
     marginLeft: 15,
     marginTop: 20,
+    fontWeight: "bold",
+  },
+  btnGoBack: {
+    marginTop: 30,
+    marginLeft: 20,
   },
 });
 

@@ -10,11 +10,12 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
   title: {
-    fontSize: 19,
+    fontSize: 28,
     color: colors.dark,
     fontWeight: "bold",
     marginLeft: 17,
-    marginTop: 10,
+    marginTop: 20,
+    marginBottom: 10
   },
   subTitle: {
     color: colors.dark,
@@ -58,6 +59,7 @@ const styles = StyleSheet.create({
     width: "100%",
     color: colors.dark,
     marginLeft: 10,
+    fontWeight: "bold"
     // width: '90%',
     // padding: 5,
     // borderRadius: 5,
@@ -99,6 +101,7 @@ const styles = StyleSheet.create({
   buttonStartText: {
     fontSize: 15,
     color: colors.gray,
+    fontWeight: "bold"
   },
   textBottom: {
     fontSize: 12,
@@ -113,6 +116,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: colors.blue,
   },
+  btnGoBack: {
+    marginTop: 30, 
+    marginLeft: 20
+  }
 });
 
 export default styles;

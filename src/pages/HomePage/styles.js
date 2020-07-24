@@ -93,11 +93,12 @@ const styles = StyleSheet.create({
   viewCardHeaderTitle: {
     fontSize: 16,
     color: colors.dark,
-    fontWeight: "600",
+    fontWeight: "bold",
   },
   viewCardHeaderButton: {
     fontSize: 14,
     color: colors.blue,
+    fontWeight: "700"
   },
   viewCardContent: {
     backgroundColor: colors.white,
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
   },
   viewCardDataText: {
     fontSize: 15,
-    fontWeight: "600",
+    fontWeight: "bold",
     color: "#222",
   },
   textNumberCard: {

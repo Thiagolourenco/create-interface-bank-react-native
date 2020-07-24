@@ -10,11 +10,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   title: {
-    fontSize: 19,
+    fontSize: 28,
     color: colors.dark,
     fontWeight: "bold",
-    marginLeft: 17,
-    marginTop: 10,
+    // marginLeft: 17,
+    // marginTop: 10,
   },
   subTitle: {
     color: colors.dark,
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   buttonStartText: {
     fontSize: 15,
     color: colors.gray,
+    fontWeight: "bold"
   },
 });
 

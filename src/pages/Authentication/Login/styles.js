@@ -1,13 +1,13 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from "react-native";
 
-import {colors} from '../../../constants/colors';
+import { colors } from "../../../constants/colors";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   image: {
     height: 250,
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   title: {
     color: colors.dark,
     fontSize: 19,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 
   subTitle: {
@@ -25,34 +25,36 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginLeft: 20,
     marginRight: 20,
-    textAlign: 'center',
+    textAlign: "center",
   },
 
   buttonAccount: {
     backgroundColor: colors.blue,
     height: 50,
-    width: '85%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: "85%",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 10,
     marginTop: 100,
   },
   buttonAccountText: {
     fontSize: 15,
     color: colors.gray,
+    fontWeight: "bold",
   },
 
   buttonLogin: {
     height: 50,
-    width: '85%',
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: "85%",
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 10,
     marginTop: 10,
   },
   buttonLoginText: {
     fontSize: 15,
     color: colors.blue,
+    fontWeight: "bold",
   },
 });
 

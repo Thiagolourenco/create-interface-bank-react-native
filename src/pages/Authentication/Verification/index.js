@@ -1,20 +1,35 @@
-import React from 'react';
-import {View, Text, SafeAreaView, TextInput} from 'react-native';
-import {RectButton} from 'react-native-gesture-handler';
-import {useNavigation} from '@react-navigation/native';
+import React from "react";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
+import { RectButton } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
+import { Ionicons } from "@expo/vector-icons";
 
-import styles from './styles';
-import {colors} from '../../../constants/colors';
+import styles from "./styles";
+import { colors } from "../../../constants/colors";
 
 export default function Verification() {
   const navigation = useNavigation();
 
   function handleYourInformation() {
-    navigation.navigate('YourInformation');
+    navigation.navigate("YourInformation");
   }
 
   return (
     <SafeAreaView style={styles.container}>
+      <TouchableOpacity
+        style={styles.btnGoBack}
+        activeOpacity={0.7}
+        onPress={() => navigation.goBack()}
+      >
+        <Ionicons name="ios-arrow-back" size={24} color={colors.dark} />
+      </TouchableOpacity>
+
       <Text style={styles.title}>Verification</Text>
       <Text style={styles.subTitle}>
         Enter 4 digit code we sent to +7827735525
@@ -40,7 +55,7 @@ export default function Verification() {
           placeholderTextColor={colors.white}
           style={[
             styles.input,
-            {backgroundColor: colors.blue, color: colors.white},
+            { backgroundColor: colors.blue, color: colors.white },
           ]}
         />
       </View>

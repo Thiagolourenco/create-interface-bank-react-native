@@ -3,16 +3,13 @@ import { View, Text, SafeAreaView, Image } from "react-native";
 import Icon from "@expo/vector-icons/MaterialIcons";
 import Icons from "@expo/vector-icons/MaterialCommunityIcons";
 import IconF from "@expo/vector-icons/FontAwesome";
+import { Octicons } from '@expo/vector-icons'; 
 import { ScrollView } from "react-native-gesture-handler";
 
 import styles from "./styles";
 import { colors } from "../../constants/colors";
 import visa from "../../assets/visa.png";
 import master from "../../assets/master.png";
-
-Icon.loadFont();
-Icons.loadFont();
-IconF.loadFont();
 
 export default function HomePage() {
   return (
@@ -48,20 +45,20 @@ export default function HomePage() {
 
           <View style={styles.viewCardIcon}>
             <View style={styles.viewIcon}>
-              <IconF name="money" size={25} color={colors.blue} />
+            <Octicons name="request-changes" size={24} color={colors.blue} />
             </View>
             <Text style={styles.viewCardIconText}>Request</Text>
           </View>
           <View style={styles.viewCardIcon}>
             <View style={styles.viewIcon}>
-              <IconF name="money" size={25} color={colors.blue} />
+              <IconF name="history" size={25} color={colors.blue} />
               {/* <View style={{height: 20, width: 20, backgroundColor: '#222'}} /> */}
             </View>
             <Text style={styles.viewCardIconText}>History</Text>
           </View>
           <View style={styles.viewCardIcon}>
             <View style={styles.viewIcon}>
-              <IconF name="money" size={25} color={colors.blue} />
+              <IconF name="exchange" size={25} color={colors.blue} />
             </View>
             <Text style={styles.viewCardIconText}>Change</Text>
           </View>

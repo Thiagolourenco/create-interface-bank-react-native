@@ -10,19 +10,18 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
   },
   title: {
-    fontSize: 19,
+    fontSize: 28,
     color: colors.dark,
     fontWeight: "bold",
     marginLeft: 17,
-    marginTop: 10,
+    marginTop: 20,
+    marginBottom: 10,
   },
   subTitle: {
     color: colors.dark,
     fontSize: 15,
     marginRight: 10,
     marginLeft: 17,
-    marginTop: 10,
-    // textAlign: 'center',
   },
   inputLabel: {
     fontSize: 12,
@@ -88,6 +87,11 @@ const styles = StyleSheet.create({
   buttonStartText: {
     fontSize: 15,
     color: colors.gray,
+    fontWeight: "bold",
+  },
+  btnGoBack: {
+    marginTop: 30,
+    marginLeft: 20,
   },
 });
 
