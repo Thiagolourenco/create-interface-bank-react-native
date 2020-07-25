@@ -26,6 +26,8 @@
 
 I'm developing this project, to put into practice the development of UI interfaces, and improve my github showing my work
 
+* Note: I did not have full access to the design of the application, I only had visual access, that is, some screens do not agree with the designer. The more I tried to get as close as possible.
+
 ## 🎨 Layout
 
 The application layout is available at this link below.
@@ -41,3 +43,25 @@ The application layout is available at this link below.
 
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
 </p>
+
+## 🛠 Tecnologias
+    - Expo 
+    - React Native
+
+
+## 🚀 Como executar o projeto
+
+# clonar este repositório
+$ git clone 
+
+# instalar as dependências
+$ yarn or npm install 
+
+# execute o projeto
+$ expo start or yarn start or npm start
+
+## 📝 Licença
+
+Este projeto esta sobe a licença MIT.
+
+Feito com ❤️ por Thiago Lourenco 👋🏽 [Entre em contato!](https://www.linkedin.com/in/thiago-louren%C3%A7o-a6a851101/)
