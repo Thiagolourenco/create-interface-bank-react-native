@@ -6,9 +6,6 @@
   	🚧  Recreating bank designer 🚀 em construção... 🚧 
 </h4>
 
-<h4 align="center"> Designer link: <a align="center" href="https://www.behance.net/gallery/92747605/Mobile-bank-app?tracking_source=search_projects_recommended%7Cmobile"/>
- </h4>
-
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Thiagolourenco/create-interface-bank?color=%2304D361">
 
