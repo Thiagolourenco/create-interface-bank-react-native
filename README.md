@@ -6,8 +6,8 @@
   	🚧  Recreating bank designer 🚀 em construção... 🚧 
 </h4>
 
-<h4 align="center"> Designer link: </h4>
-<a align="center" href="https://www.behance.net/gallery/92747605/Mobile-bank-app?tracking_source=search_projects_recommended%7Cmobile"/>
+<h4 align="center"> Designer link: <a align="center" href="https://www.behance.net/gallery/92747605/Mobile-bank-app?tracking_source=search_projects_recommended%7Cmobile"/>
+ </h4>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Thiagolourenco/create-interface-bank?color=%2304D361">
@@ -51,6 +51,7 @@ The application layout is available at this link below.
 
 ## 🚀 Como executar o projeto
 
+```bash
 # clonar este repositório
 $ git clone 
 
@@ -60,6 +61,7 @@ $ yarn or npm install
 # execute o projeto
 $ expo start or yarn start or npm start
 
+```
 ## 📝 Licença
 
 Este projeto esta sobe a licença MIT.
