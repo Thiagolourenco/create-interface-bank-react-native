@@ -39,9 +39,9 @@ The application layout is available at this link below.
 ### Mobile
 
 <p align="center">
-  <img alt="NextLevelWeek" title="#createInterfaceBank" src="./assets/Scren.png" width="200px">
+  <img alt="" src="https://thiago-27-storage.s3.amazonaws.com/Scren.jpg" width="150px" height="300px">
 
-  <img alt="NextLevelWeek" title="#createInterfaceBank" src="./assets/splashUm" width="200px">
+  <img alt="" src="https://thiago-27-storage.s3.amazonaws.com/splashUm.jpg" width="150px" height="300px">
 </p>
 
 ## 🛠 Tecnologias
