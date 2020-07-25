@@ -1,7 +1,15 @@
 import React, { useState, useRef } from "react";
-import { View, Text, TouchableOpacity, Switch, Dimensions } from "react-native";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Switch,
+  Dimensions,
+  Image,
+} from "react-native";
 import Animated, { multiply, divide } from "react-native-reanimated";
 import { interpolateColor, useScrollHandler } from "react-native-redash";
+import { useNavigation } from '@react-navigation/native'
 
 import { AntDesign } from "@expo/vector-icons";
 import { ScrollView } from "react-native-gesture-handler";
@@ -12,6 +20,7 @@ import { Entypo } from "@expo/vector-icons";
 import styles from "./styles";
 import { colors } from "../../../constants/colors";
 import BollonScroll from "../../../components/BollonScroll";
+import visaLogo from "../../../assets/simbolos.png";
 
 const { width, height } = Dimensions.get("window");
 
@@ -26,15 +35,22 @@ export default function CardPage() {
   const toggleSwitchAtm = () =>
     setIsEnabledAtm((previousState) => !previousState);
 
+  const navigation = useNavigation();
   const scroll = useRef(null);
   const { scrollHandler, x } = useScrollHandler();
   const data = [0, 1, 2];
+
+  function handleCardSettings() {
+      navigation.navigate("CardSettings")
+  }
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>Your Cards</Text>
-        <AntDesign name="ellipsis1" size={40} color={colors.dark} />
+        <TouchableOpacity onPress={handleCardSettings}>
+            <AntDesign name="ellipsis1" size={40} color={colors.dark} />
+        </TouchableOpacity>
       </View>
       <Text style={styles.subTitle}>2 physical card, 1 virtual card</Text>
 
@@ -59,11 +75,39 @@ export default function CardPage() {
         {...scrollHandler}
       >
         {data.map((item) => (
-          <View style={styles.viewCard} key={item} />
+          <View style={styles.viewCard} key={item}>
+            <View style={styles.viewCardHeader}>
+              <Text style={styles.viewCardValue}>$2000.00</Text>
+              <Image source={visaLogo} style={{ height: 40, width: 40 }} />
+            </View>
+            <View style={styles.viewCardNumber}>
+              <Text style={styles.viewCardNumberText}>****</Text>
+              <Text style={styles.viewCardNumberText}>****</Text>
+              <Text style={styles.viewCardNumberText}>****</Text>
+
+              <Text style={styles.viewCardNumberText}>1222</Text>
+            </View>
+            <View style={styles.viewCardFooter}>
+              <View style={styles.viewCardFooterNameUser}>
+                <Text style={styles.viewCardFooterNameText}>CARD HOLDER</Text>
+                <Text style={styles.viewCardFooterNameTextValue}>
+                  THIAGO L. S. SILVA
+                </Text>
+              </View>
+              <View style={styles.viewCardFooterName}>
+                <Text style={styles.viewCardFooterNameText}>EXPIRES</Text>
+                <Text style={styles.viewCardFooterNameTextValue}>02/22</Text>
+              </View>
+              <View style={styles.viewCardFooterName}>
+                <Text style={styles.viewCardFooterNameText}>CVV</Text>
+                <Text style={styles.viewCardFooterNameTextValue}>274</Text>
+              </View>
+            </View>
+          </View>
         ))}
       </Animated.ScrollView>
 
-      <View style={styles.viewBollon}>
+      {/* <View style={styles.viewBollon}>
         {data.map((_, index) => (
           <BollonScroll
             key={index}
@@ -71,8 +115,12 @@ export default function CardPage() {
             {...{ index }}
           />
         ))}
+      </View> */}
+      <View style={styles.viewBollon}>
+        {data.map((item) => (
+          <BollonScroll />
+        ))}
       </View>
-
       <View style={styles.cardSettings}>
         <Text style={styles.cardSettingsTitle}>Card Settings</Text>
 

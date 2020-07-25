@@ -62,6 +62,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     marginLeft: 10,
     marginRight: 10,
+    justifyContent: "space-evenly",
   },
 
   viewBollon: {
@@ -108,6 +109,51 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   contentCard: { flexDirection: "row" },
+  viewCardHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginLeft: 20,
+    marginRight: 20,
+    alignItems: "center",
+  },
+  viewCardValue: {
+    color: colors.white,
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  viewCardType: {
+    color: colors.white,
+    fontSize: 16,
+    fontWeight: "800",
+  },
+  viewCardNumber: {
+    flexDirection: "row",
+    marginLeft: 10,
+  },
+  viewCardNumberText: {
+    fontSize: 16,
+    color: colors.white,
+    fontWeight: "bold",
+    marginLeft: 10,
+  },
+  viewCardFooter: {
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+  },
+  viewCardFooterName: {},
+  viewCardFooterNameText: {
+    fontSize: 12,
+    color: "rgba(255,255,255,0.5)",
+    fontWeight: "bold",
+  },
+  viewCardFooterNameTextValue: {
+    fontSize: 10,
+    color: colors.white,
+    fontWeight: "bold",
+  },
+  viewCardFooterNameUser: {
+    marginRight: 40,
+  },
 });
 
 export default styles;

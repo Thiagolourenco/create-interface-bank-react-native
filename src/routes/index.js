@@ -3,12 +3,15 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Icon from "@expo/vector-icons/MaterialIcons";
 import { RectButton } from "react-native-gesture-handler";
 
+// AUTH
 import Login from "../pages/Authentication/Login";
 import Registration from "../pages/Authentication/Registration";
 import Verification from "../pages/Authentication/Verification";
 import YourInformation from "../pages/Authentication/YourInformation";
 import Success from "../pages/Authentication/Success";
 
+// CARD
+import CardSettings from "../pages/Card/CardSettings";
 import BottomScrren from "./BottomNavigator";
 
 import { colors } from "../constants/colors";
@@ -17,7 +20,7 @@ const Stack = createStackNavigator();
 
 export default function Routes() {
   return (
-    <Stack.Navigator screenOptions={{ mode: "card"}}>
+    <Stack.Navigator screenOptions={{ mode: "card" }}>
       <Stack.Screen
         name="Login"
         component={Login}
@@ -74,6 +77,14 @@ export default function Routes() {
       <Stack.Screen
         name="Home"
         component={BottomScrren}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="CardSettings"
+        component={CardSettings}
         options={{
           headerShown: false,
         }}
