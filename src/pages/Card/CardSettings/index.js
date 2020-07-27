@@ -23,6 +23,10 @@ export default function CardSettigns() {
   const scroll = useRef(null);
   const { scrollHandler, x } = useScrollHandler();
 
+  function sendMoney() {
+    navigation.navigate("SendMoney");
+  }
+
   return (
     <View style={styles.styles}>
       <View style={styles.header}>
@@ -41,14 +45,18 @@ export default function CardSettigns() {
         </Text>
 
         <View style={styles.viewAppFunctions}>
-          <View style={styles.viewCardIcon}>
+          <TouchableOpacity
+            style={styles.viewCardIcon}
+            activeOpacity={0.6}
+            onPress={sendMoney}
+          >
             <View style={styles.viewIcon}>
               <IconF name="money" size={25} color={colors.blue} />
 
               {/* <View style={{height: 20, width: 20, backgroundColor: '#222'}} /> */}
             </View>
             <Text style={styles.viewCardIconText}>Send</Text>
-          </View>
+          </TouchableOpacity>
 
           <View style={styles.viewCardIcon}>
             <View style={styles.viewIcon}>

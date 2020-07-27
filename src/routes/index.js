@@ -13,6 +13,9 @@ import Success from "../pages/Authentication/Success";
 // CARD
 import CardSettings from "../pages/Card/CardSettings";
 import BottomScrren from "./BottomNavigator";
+import SendMoney from "../pages/Card/SendMoney";
+import SendMoneyPersonal from "../pages/Card/SendMoneyPersonal";
+import Congrats from "../pages/Card/Congrats";
 
 import { colors } from "../constants/colors";
 
@@ -85,6 +88,30 @@ export default function Routes() {
       <Stack.Screen
         name="CardSettings"
         component={CardSettings}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="SendMoney"
+        component={SendMoney}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="SendMoneyPersonal"
+        component={SendMoneyPersonal}
+        options={{
+          headerShown: false,
+        }}
+      />
+
+      <Stack.Screen
+        name="Congrats"
+        component={Congrats}
         options={{
           headerShown: false,
         }}

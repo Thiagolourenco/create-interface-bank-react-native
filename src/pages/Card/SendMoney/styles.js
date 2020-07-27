@@ -1,0 +1,176 @@
+import { StyleSheet } from "react-native";
+
+import { colors } from "../../../constants/colors";
+
+const styles = StyleSheet.create({
+  contaienr: {
+    flex: 1,
+  },
+  header: {
+    // flex: 1,
+    backgroundColor: colors.dark,
+    height: "100%",
+    width: "100%",
+  },
+  headerTitle: {
+    fontSize: 27,
+    color: colors.white,
+    fontWeight: "700",
+    marginLeft: 20,
+    marginTop: 10,
+  },
+  btnGoBack: {
+    marginTop: 20,
+    marginLeft: 20,
+  },
+  headerSubTitle: {
+    fontSize: 14,
+    color: colors.secondary,
+    fontWeight: "bold",
+    marginLeft: 20,
+    marginTop: 5,
+  },
+  viewAppFunctions: {
+    flexDirection: "row",
+    marginTop: 20,
+    justifyContent: "space-evenly",
+  },
+  viewCardIcon: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  viewIcon: {
+    height: 45,
+    width: 45,
+    borderRadius: 10,
+    backgroundColor: colors.white,
+    // marginLeft: 30,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  viewCardIconText: {
+    color: colors.secondary,
+    fontWeight: "bold",
+    // marginLeft: 25,
+    fontSize: 11,
+    marginTop: 10,
+  },
+  viewScroll: {
+    backgroundColor: colors.gray,
+    flex: 1,
+    marginTop: 20,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
+  },
+  viewScrollTitle: {
+    fontSize: 16,
+    color: colors.dark,
+    fontWeight: "bold",
+    marginTop: 20,
+    marginLeft: 20,
+  },
+  dataRecentView: {
+    flexDirection: "row",
+    marginTop: 20,
+    marginLeft: 10,
+  },
+  dataRecentViewContent: {
+    marginLeft: 15,
+    alignItems: "center",
+    height: 130,
+    width: 130,
+    backgroundColor: colors.white,
+    justifyContent: "center",
+    borderRadius: 15,
+    shadowColor: "#eee",
+    shadowOffset: {
+      height: 2,
+      width: 2,
+    },
+    shadowOpacity: 3,
+    shadowRadius: 3,
+    elevation: 0.5,
+  },
+  dataRecentViewContentText: {
+    fontSize: 15,
+    fontWeight: "700",
+    marginTop: 5,
+    marginBottom: 5,
+    color: colors.dark,
+  },
+  dataRecentViewContentSubT: {
+    color: "#8E93A0",
+    fontSize: 14,
+  },
+  imageViewList: {
+    height: 60,
+    width: 60,
+    backgroundColor: "#eee",
+    borderRadius: 10,
+  },
+  viewContacts: {
+    marginTop: 30,
+    flex: 1,
+    backgroundColor: "#fff",
+  },
+  viewSearch: {
+    flexDirection: "row",
+    paddingLeft: 10,
+    marginTop: 10,
+    marginLeft: 10,
+    backgroundColor: "#F7F9FC",
+    width: 330,
+    borderRadius: 10,
+    alignItems: "center",
+    height: 40,
+    alignSelf: "center",
+  },
+  input: {
+    marginLeft: 10,
+    color: "#C2C6CF",
+    fontSize: 14,
+  },
+  viewContactList: {
+    width: 280,
+    alignSelf: "center",
+    borderBottomWidth: 1,
+    flexDirection: "row",
+    borderBottomColor: "#f6f6f6",
+    marginTop: 15,
+    paddingBottom: 15,
+    justifyContent: "space-between",
+  },
+  viewContactListImage: {
+    height: 40,
+    width: 40,
+    borderRadius: 10,
+    backgroundColor: "#eee",
+  },
+  viewContetListTitle: {
+    fontSize: 15,
+    fontWeight: "700",
+    color: colors.dark,
+  },
+  viewContetListSub: {
+    fontSize: 12,
+    fontWeight: "600",
+    color: "#8E93A0",
+    marginTop: 4,
+  },
+  btnInvite: {
+    height: 30,
+    width: 80,
+    borderRadius: 5,
+    backgroundColor: "#4073cc",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  btnInviteText: {
+    color: colors.white,
+    fontSize: 12,
+    fontWeight: "700",
+  },
+});
+
+export default styles;
