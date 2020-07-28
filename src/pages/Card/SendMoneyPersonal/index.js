@@ -5,13 +5,17 @@ import { ScrollView } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
+import Modal from "react-native-modal";
 
 import { colors } from "../../../constants/colors";
 import styles from "./styles";
 import imageLogoCard from "../../../assets/visa.png";
+// import visa from "../../assets/visa.png";
+import master from "../../../assets/master.png";
 
 export default function SendMoneyPersonal() {
   const [sliderState, setSliderState] = useState([100, 200, 300, 450, 500]);
+  const [modal, setModal] = useState(false);
   const [dataValor, setDataValor] = useState([
     {
       id: 0,
@@ -37,6 +41,14 @@ export default function SendMoneyPersonal() {
   const [sliderChange, setSliderChange] = useState(0);
 
   const navigation = useNavigation();
+
+  function handleModalClose() {
+    setModal(false);
+  }
+
+  function handleModalOpen() {
+    setModal(true);
+  }
 
   return (
     <View style={styles.container}>
@@ -89,7 +101,11 @@ export default function SendMoneyPersonal() {
           <View style={styles.viewSelectAccount}>
             <Text style={styles.viewContentTitle}>Select your account</Text>
 
-            <TouchableOpacity style={styles.btnSelectCard} activeOpacity={0.7}>
+            <TouchableOpacity
+              style={styles.btnSelectCard}
+              activeOpacity={0.7}
+              onPress={handleModalOpen}
+            >
               <View style={styles.viewRow}>
                 <View style={styles.viewImageVisa}>
                   <Image style={styles.imgCard} source={imageLogoCard} />
@@ -105,15 +121,17 @@ export default function SendMoneyPersonal() {
               </View>
             </TouchableOpacity>
 
-            <View
-              style={styles.groupBtn}
-            >
+            <View style={styles.groupBtn}>
               <TouchableOpacity style={styles.btnCancel} activeOpacity={0.7}>
                 <Text style={[styles.btnText, { color: "#8E93A0" }]}>
                   Cancel
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.btnSend} activeOpacity={0.7} onPress={() => navigation.navigate("Congrats")}>
+              <TouchableOpacity
+                style={styles.btnSend}
+                activeOpacity={0.7}
+                onPress={() => navigation.navigate("Congrats")}
+              >
                 <Text style={[styles.btnText, { color: colors.white }]}>
                   Send
                 </Text>
@@ -122,6 +140,54 @@ export default function SendMoneyPersonal() {
           </View>
         </View>
       </View>
+
+      <Modal
+        testID="modal"
+        isVisible={modal}
+        onSwipeComplete={() => handleModalClose()}
+        swipeDirection={["down"]}
+        style={{ justifyContent: "center", margin: 0 }}
+      >
+        <View style={styles.viewModal}>
+          <View style={styles.viewLine} />
+          <Text style={styles.viewModalTitle}>Change account</Text>
+          <View style={styles.viewContentModal}>
+            <View style={styles.viewCardContentItem}>
+              <View style={styles.viewTypeImageCard}>
+                <Image source={imageLogoCard} style={styles.imageVisa} />
+              </View>
+              <View style={styles.viewCardData}>
+                <View style={styles.viewCardDataHeader}>
+                  <Text style={styles.viewCardDataText}>Visa Mater</Text>
+                  <Text style={styles.textNumberCard}>** 7645</Text>
+                </View>
+                <View style={styles.viewValueCard}>
+                  <Text style={styles.viewCardDataText}>$20000.00</Text>
+                  <Text style={styles.textValueCardDate}>01/23</Text>
+                </View>
+              </View>
+            </View>
+            <View style={styles.textValueCardDate} />
+          </View>
+          <View style={styles.viewContentModal}>
+            <View style={styles.viewCardContentItem}>
+              <View style={styles.viewTypeImageCard}>
+                <Image source={master} style={styles.imageMaster} />
+              </View>
+              <View style={styles.viewCardData}>
+                <View style={styles.viewCardDataHeader}>
+                  <Text style={styles.viewCardDataText}>Mastercard</Text>
+                  <Text style={styles.textNumberCard}>** 4505</Text>
+                </View>
+                <View style={styles.viewValueCard}>
+                  <Text style={styles.viewCardDataText}>$589.00</Text>
+                  <Text style={styles.textValueCardDate}>01/22</Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }

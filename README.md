@@ -41,6 +41,7 @@ The application layout is available at this link below.
   <img alt="" src="https://thiago-27-storage.s3.amazonaws.com/splashUm.jpg" width="150px" height="300px">
   <img alt="" title="Cards" src="https://thiago-27-storage.s3.amazonaws.com/screeb03.jpg" width="150px" height="300px">
   <img alt="" title="Cards" src="https://thiago-27-storage.s3.amazonaws.com/screeb04.jpg" width="150px" height="300px">
+  <img alt="" title="Profile" src="https://thiago-27-storage.s3.amazonaws.com/profileScreen.jpg" width="150px" height="300px">
 
 </p>
 

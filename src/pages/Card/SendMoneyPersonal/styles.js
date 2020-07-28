@@ -183,7 +183,116 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     bottom: 10,
-  }
+  },
+  viewModal: {
+    height: 250,
+    backgroundColor: colors.gray,
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+  },
+  viewLine: {
+    width: 50,
+    borderBottomWidth: 4,
+    borderBottomColor: "#212121",
+    marginTop: 5,
+    alignSelf: "center",
+  },
+  viewModalTitle: {
+    fontSize: 18,
+    color: "#2C314B",
+    fontWeight: "bold",
+    marginTop: 20,
+    marginLeft: 20,
+  },
+  viewCardData: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "100%",
+  },
+  viewCardDataHeader: {
+    flexDirection: "column",
+    marginLeft: 10,
+  },
+  viewCardDataText: {
+    fontSize: 15,
+    fontWeight: "bold",
+    color: "#222",
+  },
+  textNumberCard: {
+    fontSize: 12,
+    color: "#ccc",
+    marginTop: 5,
+  },
+  textNumberCardYear: {
+    fontSize: 12,
+    color: "#ccc",
+    marginTop: 5,
+    fontWeight: "bold",
+  },
+  viewValueCard: {
+    flexDirection: "column",
+    marginRight: 30,
+  },
+  textValueCardDate: {
+    fontSize: 12,
+    color: "#ccc",
+    marginTop: 5,
+    alignSelf: "flex-end",
+  },
+  textValuePorcetange: {
+    fontSize: 12,
+    color: "#ccc",
+    marginTop: 5,
+    alignSelf: "flex-end",
+    fontWeight: "bold",
+  },
+  viewCardContentItem: {
+    flexDirection: "row",
+    margin: 10,
+  },
+  viewTypeImageCard: {
+    height: 30,
+    width: 30,
+    borderRadius: 8,
+    backgroundColor: "#eee",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 50,
+  },
+  imageVisa: {
+    height: 20,
+    width: 20,
+  },
+  imageMaster: {
+    height: 10,
+    width: 15,
+  },
+  viewContentModal: {
+    height: 70,
+    width: "90%",
+    marginTop: 15,
+    backgroundColor: "#fff",
+    alignSelf: "center",
+    borderRadius: 10,
+    alignItems: "center",
+    paddingLeft: 20,
+  },
+  viewCardContentItem: {
+    flexDirection: "row",
+    margin: 10,
+  },
+  viewTypeImageCard: {
+    height: 40,
+    width: 40,
+    borderRadius: 8,
+    backgroundColor: "#eee",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 5,
+  },
 });
 
 export default styles;
