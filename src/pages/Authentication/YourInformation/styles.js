@@ -66,8 +66,8 @@ const styles = StyleSheet.create({
     marginLeft: 17,
   },
   viewGroupButton: {
-    bottom: 0,
-    position: "absolute",
+    // bottom: 0,
+    // position: "absolute",
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
@@ -93,6 +93,12 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginLeft: 20,
   },
+  textValidationPassword: {
+    color: "red", 
+    fontSize: 8, 
+    marginTop: 5, 
+    marginLeft: 20
+  }
 });
 
 export default styles;

@@ -38,21 +38,9 @@ import Animated, { Extrapolate, interpolate } from "react-native-reanimated";
 
 import { colors } from "../../constants/colors";
 
-export default function BollonScroll() {
-  //   const opacity = interpolate(currentIndex, {
-  //     inputRange: [index - 1, index, index + 1],
-  //     outputRange: [0.5, 1, 0.5],
-  //     extrapolate: Extrapolate.CLAMP,
-  //   });
-
-  //   const scale = interpolate(currentIndex, {
-  //     inputRange: [index - 1, index, index + 1],
-  //     outputRange: [1, 1.25, 0.5],
-  //     extrapolate: Extrapolate.CLAMP,
-  //   });
-
-  return <View style={styles.container} />;
-}
+const BollonScroll = () => {
+  return <Animated.View style={styles.container} />;
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -63,3 +51,5 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
 });
+
+export default BollonScroll;
