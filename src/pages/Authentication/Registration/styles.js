@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginLeft: 17,
     marginTop: 20,
-    marginBottom: 10
+    marginBottom: 10,
   },
   subTitle: {
     color: colors.dark,
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     width: "100%",
     color: colors.dark,
     marginLeft: 10,
-    fontWeight: "bold"
+    fontWeight: "bold",
     // width: '90%',
     // padding: 5,
     // borderRadius: 5,
@@ -81,8 +81,7 @@ const styles = StyleSheet.create({
     marginLeft: 17,
   },
   viewGroupButton: {
-    bottom: 0,
-    position: "absolute",
+    marginTop: 125,
     width: "100%",
     justifyContent: "center",
     alignItems: "center",
@@ -96,12 +95,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderRadius: 10,
     marginTop: 100,
-    // alignSelf: 'center',
   },
   buttonStartText: {
     fontSize: 15,
     color: colors.gray,
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   textBottom: {
     fontSize: 12,
@@ -117,9 +115,9 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.blue,
   },
   btnGoBack: {
-    marginTop: 30, 
-    marginLeft: 20
-  }
+    marginTop: 30,
+    marginLeft: 20,
+  },
 });
 
 export default styles;
