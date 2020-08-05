@@ -42,12 +42,16 @@ The application layout is available at this link below.
   <img alt="" title="Cards" src="https://thiago-27-storage.s3.amazonaws.com/screeb03.jpg" width="150px" height="300px">
   <img alt="" title="Cards" src="https://thiago-27-storage.s3.amazonaws.com/screeb04.jpg" width="150px" height="300px">
   <img alt="" title="Profile" src="https://thiago-27-storage.s3.amazonaws.com/profileScreen.jpg" width="150px" height="300px">
+  <img alt="" title="MAP" src="https://thiago-27-storage.s3.amazonaws.com/map.jpg" width="150px" height="300px">
 
 </p>
 
 ## 🛠 Tecnologias
-    - Expo 
-    - React Native
+    - expo 
+    - react-native
+    - react-navigation V5
+    - formik
+    - react-native-maps
 
 
 ## 🚀 Como executar o projeto
